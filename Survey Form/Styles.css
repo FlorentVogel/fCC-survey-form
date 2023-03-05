@@ -1,0 +1,194 @@
+:root {
+    --darker-blue: #1F2937;
+    --light-blue: #2F3E53;
+    --dark-green: #10B981;
+    --light-green: #4ADF86;
+    --pure-white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--darker-blue);
+    text-align: center;
+    color: var(--pure-white);
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 60px;
+    color: var(--dark-green);
+}
+.fa-sharp {
+    font-size: 8rem;
+    color: var(--dark-green);
+    margin-bottom: 0.2em;
+}
+
+#description {
+    margin-top: 2em;
+    line-height: 1.6;
+}
+
+form {
+    width: 100%;
+    max-width: 550px;
+    min-width: 300px;
+    margin: 0 auto;
+    border: 2px solid var(--light-blue);
+    padding: 20px 20px;
+    box-shadow: 0 0 5px var(--light-blue);
+    text-align: left;
+}
+
+input,
+textarea {
+    font-size: 1.6rem;
+}
+
+.infos input {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    padding: 0.5em;
+}
+
+.checkbox-container,
+.radio-container,
+.newsletter,
+.infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-container p,
+.radio-container p {
+    margin-bottom: 1em;
+}
+
+.checkbox-container {
+    margin-top: 1.5em;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+
+fieldset {
+    border: none;
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--light-blue);
+}
+
+fieldset:nth-of-type(3) {
+    border-bottom: none;
+}
+
+textarea,
+select {
+    display: block;
+    width: 100%;
+}
+
+select {
+    margin: 1em 0;
+    padding: 0.5em;
+    font-size: 1.6rem;
+}
+
+textarea {
+    margin: 2em auto;
+    padding: 0.5em;
+}
+
+.newsletter {
+    margin-top: 2em;
+    text-align: center;
+}
+
+input:focus, textarea:focus, select:focus {
+    border: 2px solid var(--dark-green);
+    outline: none;
+} 
+
+form,
+.infos input,
+select,
+textarea,
+button {
+    border-radius: 4px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-style: italic;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--light-blue);
+    background-color: var(--dark-green);
+    border: none;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--light-green);
+    box-shadow: 0 0 5px var(--light-green);
+}
+
+header {
+    margin: 50px auto;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--dark-green);
+    font-style: italic;
+}
+
+footer a:hover {
+    color: var(--light-green);
+}
+
+@media only screen and (max-width: 540px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    .fa-sharp {
+        font-size: 5rem;
+    }
+
+    form {
+        width: 66%;
+    }
+
+    header p,
+    footer p {
+        font-size: 1.6rem;
+    }
+}
+

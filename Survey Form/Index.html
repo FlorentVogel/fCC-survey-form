@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles.css">
+    <title>ThunderCamp: Survey Form</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><i class="fa-sharp fa-solid fa-bolt"></i></div>
+        <h1 id="title">ThunderCamp</h1>
+        <p id="description">Thanks for learning on ThunderCamp Inc.
+        </br>We'd love to know a bit more about you an your experience with us.</p>
+    </header>
+    <main id="main-section">
+        <form id="survey-form" action="#" method="post">
+            <fieldset>
+                <div class="infos">
+                    <label for="name" id="name-label">Name:
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </label>
+                    <label for="email" id="email-label">Email:
+                        <input id="email" name="email" type="email" placeholder="johndoe@mail.com" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" required>
+                    </label>
+                    <label for="number" id="number-label">Age:
+                        <input name="number" type="number" id="number" pattern="[O-9]" placeholder="18" min="18" max="99" required>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="radio-container">
+                    <p>Currently, do you have a job in web development ?</p>
+                    <label for="yes-answer">
+                        <input class="radio" name="user-job" type="radio" id="yes-answer" value="yes"> Yes
+                    </label>
+                    <label for="no-answer">
+                        <input class="radio" name="user-job" type="radio" id="no-answer" value="no"> No
+                    </label>
+                </div>
+
+                <div class="checkbox-container">
+                    <p>What is your favorite javascript framework ?</p>
+                    <label><input class="checkbox" name="preference" type="checkbox" value="react"> React</label>
+                    <label><input class="checkbox" name="preference" type="checkbox" value="vue-js"> Vue Js</label>
+                    <label><input class="checkbox" name="preference" type="checkbox" value="node-js"> Node Js</label>
+                    <label><input class="checkbox" name="preference" type="checkbox" value="vite-js"> Vite Js</label>
+                    <label><input class="checkbox" name="preference" type="checkbox" value="svelte-js"> Svelte Js</label>
+                    <label><input class="checkbox" name="preference" type="checkbox" value="angular"> Angular</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown"> How did you hear about us ?
+                    <select id="dropdown" name="dropdown">
+                        <option value="">(select an option)</option>
+                        <option value="1">Facebook</option>
+                        <option value="2">Twitter</option>
+                        <option value="3">LinkedIn</option>
+                        <option value="4">Youtube</option>
+                        <option value="5">TikTok</option>
+                        <option value="6">Instagram</option>
+                        <option value="7">Other</option>
+                    </select>
+                </label>
+
+                <label for="suggestions">
+                    <textarea id="suggestions" name="suggestions" rows="5" cols="30" placeholder="Tell us more if you have any suggestions.."></textarea>
+                </label>
+                <div class="newsletter">
+                    <label for="newsletter">
+                        <input name="newsletter" id="newsletter" value="newsletter" type="checkbox"> I accept to subscribe to the newsletter
+                    </label>
+                </div>
+            </fieldset>
+            <button id="submit" type="submit" value="submit">Submit</button>
+        </form>
+    </main>
+    <footer><p>&copy ThunderCamp - 2023 - webdesign by : <a href="https://github.com/FlorentVogel" target="_blank">Florent Vogel</a>.</p></footer>
+</body>
+</html>
